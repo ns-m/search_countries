@@ -36,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/CountryNameEditText">
@@ -46,16 +47,19 @@
             android:layout_height="wrap_content"
             android:text="Input inquiry"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="150dp"
-            tools:layout_editor_absoluteY="324dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/StatusImageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/ic_baseline_youtube_searched_for_24"
-            tools:layout_editor_absoluteX="156dp"
-            tools:layout_editor_absoluteY="224dp" />
+            app:layout_constraintBottom_toTopOf="@+id/StatusTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_youtube_searched_for_24" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
