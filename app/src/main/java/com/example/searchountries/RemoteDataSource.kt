@@ -13,7 +13,7 @@ interface RestCoutriesApi {
 }
 
 var retrofit = Retrofit.Builder()
-    .baseUrl("https://restcountries.com/v3.1/")
+    .baseUrl("https://countriesinfo21.herokuapp.com/")
     .addConverterFactory(GsonConverterFactory.create())
     .build()
 
